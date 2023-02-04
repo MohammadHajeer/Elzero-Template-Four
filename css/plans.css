@@ -1,0 +1,102 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(8) a {
+    background-color: var(--hover-color);
+  }
+/* End Filtering Active Link */
+/* Start Styling Plans */
+.contents .content .boxs .plan {
+  padding: 20px;
+}
+.contents .content .boxs .price {
+  color: var(--font-color);
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  border: 3px solid var(--font-color);
+  border-radius: 6px;
+}
+.contents .content .boxs .plan:nth-child(1) .price {
+  background-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e;
+}
+.contents .content .boxs .plan:nth-child(2) .price {
+  background-color: #0075ff;
+  box-shadow: 0 0 0 3px #0075ff;
+}
+.contents .content .boxs .plan:nth-child(3) .price {
+  background-color: #f59e0b;
+  box-shadow: 0 0 0 3px #f59e0b;
+}
+.contents .content .boxs .price p {
+  font-size: 25px;
+}
+.contents .content .boxs .price span {
+  font-size: 40px;
+  position: relative;
+}
+.contents .content .boxs .price span::before {
+  content: "$";
+  position: absolute;
+  font-size: 30px;
+  left: -20px;
+  top: -5px;
+}
+
+.contents .content .boxs .features {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.contents .content .boxs .features .feature {
+  color: var(--font-color);
+  border-bottom: 1px solid var(--dimmed-color);
+  position: relative;
+  padding: 15px 30px;
+}
+.contents .content .boxs .features .feature::after {
+  content: "\f05a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--dimmed-color);
+  cursor: pointer;
+}
+.contents .content .boxs .features .feature::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  text-align: center;
+}
+.contents .content .boxs .features .true::before {
+  content: "\f00c";
+  color: #064C12;
+}
+.contents .content .boxs .features .false::before {
+  content: "\f00d";
+  color: #F44336;
+}
+
+.contents .content .boxs .link-button {
+  font-size: 16px;
+}
+.contents .content .boxs .plan:nth-child(1) .link-button {
+  background-color: #22c55e;
+}
+.contents .content .boxs .plan:nth-child(2) .link-button {
+  background-color: #0075ff;
+}
+.contents .content .boxs .plan:nth-child(3) .link-button {
+  background-color: #f59e0b;
+}
+
+.contents .content .boxs .chosen {
+  color: var(--dimmed-color);
+  text-align: center;
+}
+/* End Styling Plans */

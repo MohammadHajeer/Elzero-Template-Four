@@ -1,0 +1,63 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(9) a {
+    background-color: var(--hover-color);
+  }
+/* End Filtering Active Link */
+.contents .content {
+  position: relative;
+}
+.working {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--font-color);
+  text-align: center;
+}
+
+.working h2::after {
+  content: "";
+  animation: loading 2s linear infinite;
+}
+
+.working .gears {
+  margin-top: 20px;
+}
+.working .gears i:first-child {
+  font-size: 70px;
+  animation: clock-wise 5s linear infinite;
+}
+.working .gears i:last-child {
+  font-size: 50px;
+  animation: anti-clock-wise 4s linear infinite;
+}
+
+@keyframes clock-wise {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anti-clock-wise {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loading {
+  20%, 100% {
+    content: ".";
+  }
+  40%, 80% {
+    content: "..";
+  }
+  60% {
+    content: "...";
+  }
+}

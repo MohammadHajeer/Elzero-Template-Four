@@ -1,0 +1,123 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(4) a {
+  background-color: var(--hover-color);
+}
+/* End Filtering Active Link */
+/* Start Styling Projects */
+.contents .content .boxs .project {
+  padding: 20px;
+  position: relative;
+}
+
+.contents .content .boxs .project .date {
+  position: absolute;
+  color: var(--dimmed-color);
+  font-size: 13px;
+  right: 10px;
+  top: 10px;
+}
+
+.contents .content .boxs .project .details p:first-child {
+  color: var(--font-color);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.contents .content .boxs .project .details p:last-child {
+  color: var(--dimmed-color);
+  font-size: 14px;
+}
+
+.contents .content .boxs .project .team {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dimmed-color);
+}
+.contents .content .boxs .project .team img {
+  width: 50px;
+  border-radius: 50%;
+  border: 5px solid var(--hover-color);
+  position: relative;
+}
+.contents .content .boxs .project .team img:nth-child(2) {
+  left: -20px;
+}
+.contents .content .boxs .project .team img:nth-child(3) {
+  left: -40px;
+}
+.contents .content .boxs .project .team img:nth-child(4) {
+  left: -60px;
+}
+.contents .content .boxs .project .team img:nth-child(5) {
+  left: -80px;
+}
+
+.contents .content .boxs .project .about {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  border-bottom: 1px solid var(--dimmed-color);
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .project .about {
+    flex-direction: column;
+  }
+}
+
+.contents .content .boxs .project .about p {
+  color: var(--font-color);
+  background-color: var(--hover-color);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.contents .content .boxs .project .about p:nth-child(1) {
+  order: 2;
+}
+.contents .content .boxs .project .about p:nth-child(2) {
+  order: 1;
+}
+.contents .content .boxs .project .about p:nth-child(3) {
+  order: 1;
+}
+
+.contents .content .boxs .project .progress-salary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .project .progress-salary {
+    flex-direction: column;
+  }
+}
+
+.contents .content .boxs .project .progress-salary .progress {
+  position: relative;
+  flex-basis: 50%;
+  height: 8px;
+  border-radius: 10px;
+  background-color: var(--hover-color);
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .project .progress-salary .progress {
+    flex-basis: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.contents .content .boxs .project .progress-salary .progress .completion {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.contents .content .boxs .project .progress-salary .salary {
+  color: var(--dimmed-color);
+  font-size: 14px;
+}
+/* End Styling Boxs */

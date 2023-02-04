@@ -1,0 +1,73 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(5) a {
+    background-color: var(--hover-color);
+  }
+/* End Filtering Active Link */
+/* Start Styling Courses */
+.contents .content .boxs {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.contents .content .boxs .course {
+  position: relative;
+}
+.contents .content .boxs .course > img{
+  width: 100%;
+}
+
+.contents .content .boxs .course .profile-photo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.contents .content .boxs .course .profile-photo img{
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid var(--hover-color);
+}
+
+.contents .content .boxs .course .details {
+  padding: 20px;
+}
+.contents .content .boxs .course .details p:first-child {
+  color: var(--font-color);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.contents .content .boxs .course .details p:last-child {
+  color: var(--dimmed-color);
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.contents .content .boxs .course .info {
+  position: relative;
+  z-index: 1;
+}
+.contents .content .boxs .course .info::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--dimmed-color);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.contents .content .boxs .course .link-button {
+  margin: 0 auto;
+}
+
+.contents .content .boxs .course .description {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 5px 20px 15px;
+  font-size: 13px;
+  color: var(--dimmed-color);
+}
+/* End Styling Courses */

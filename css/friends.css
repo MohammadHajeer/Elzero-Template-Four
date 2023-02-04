@@ -1,0 +1,154 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(6) a {
+  background-color: var(--hover-color);
+}
+/* End Filtering Active Link */
+/* Start Styling Boxes */
+.contents .content .boxs {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+}
+.contents .content .boxs .card {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0px var(--main-color),
+  0 0 0px var(--background-color);
+  transition: var(--transition-time);
+  transition-delay: var(--transition-time);
+}
+.contents .content .boxs .card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: var(--background-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: var(--transition-time);
+} 
+.contents .content .boxs .card:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.contents .content .boxs .card:hover {
+
+  box-shadow: 0 0 5px 1px var(--main-color),
+  0 0 5px var(--background-color);
+}
+
+.contents .content .boxs .card .contact {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  top: 10px;
+  left: 10px;
+}
+.contents .content .boxs .card .contact a {
+  color: var(--dimmed-color);
+  background-color: var(--hover-color);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.contents .content .boxs .card .contact a:hover {
+animation: 0.3s stunned linear forwards;
+}
+
+.contents .content .boxs .card .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--dimmed-color);
+  padding: 20px 0 15px;
+}
+.contents .content .boxs .card .profile img {
+  width: 100px;
+  border-radius: 50%;
+}
+.contents .content .boxs .card .profile .text {
+  line-height: 1.5;
+  text-align: center;
+}
+.contents .content .boxs .card .profile h4 {
+  color: var(--font-color);
+  letter-spacing: -1px;
+}
+.contents .content .boxs .card .profile p {
+  color: var(--dimmed-color);
+  font-size: 13px;
+}
+
+.contents .content .boxs .card .personal {
+padding: 20px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid var(--dimmed-color);
+}
+.contents .content .boxs .card .personal .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contents .content .boxs .card .personal .details .detaile {
+  color: var(--font-color);
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  font-size: 14px;
+}
+.contents .content .boxs .card .personal .details .detaile p {
+  font-weight: 500;
+  margin: 0
+}
+.contents .content .boxs .card .personal .mvp {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1876f25a;
+}
+.contents .content .boxs .card .personal .vip {
+  color: #3F2E11;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.contents .content .boxs .card .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.contents .content .boxs .card .foot p {
+  color: var(--dimmed-color);
+  font-size: 13px;
+}
+.contents .content .boxs .card .foot .buttons {
+  display: flex;
+  gap: 3px;
+}
+.contents .content .boxs .card .foot .buttons .remove {
+  background-color: #F44336;
+}
+/* End Styling Boxes */
+/* Start Animation */
+@keyframes stunned {
+  25% {
+    background-color: #3dacf2;;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: #0077b5;
+    color: var(--font-color);
+  }
+}
+/* End Animation */

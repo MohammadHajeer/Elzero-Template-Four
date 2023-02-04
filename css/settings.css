@@ -1,0 +1,385 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(2) a {
+  background-color: var(--hover-color);
+}
+/* End Filtering Active Link */
+/* Start Global Rules */
+.contents .content .boxs > div {
+  padding: 20px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.title h2 {
+  color: var(--font-color);
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.title p,
+.details p {
+  color: var(--dimmed-color);
+  font-size: 14px;
+}
+.details h4 {
+  color: var(--font-color);
+  margin-bottom: 8px;
+}
+.button {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+.toggle:checked + .switch {
+  background-color: #0075ff;
+}
+.toggle:checked + .switch::after {
+  transform: translate(53px, -50%);
+  content: "\f00c";
+  color: #0075ff;
+}
+.toggle {
+  display: none;
+}
+.switch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 40px;
+  background-color: var(--font-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.switch::after {
+  content: "\f00d";
+  display: block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  background-color: var(--main-color);
+  width: 20px;
+  padding: 2px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--font-color);
+  transform: translate(2px, -50%);
+  transition: var(--transition-time);
+}
+/* End Global Rules */
+/* Start Control Box */
+.contents .content .boxs .control-box {
+  display: flex;
+  flex-direction: column;
+}
+.contents .content .boxs .control-box .control-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .control-box .control-setting {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+.contents .content .boxs .control-box textarea {
+  background-color: #3b3b3b;
+  resize: none;
+  height: 150px;
+  border: 1px solid var(--dimmed-color);
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: var(--font-color);
+}
+.contents .content .boxs .control-box textarea:focus {
+  outline: none;
+}
+.contents .content .boxs .control-box textarea::placeholder {
+  color: #727f8a;
+}
+/* End Control Box */
+/* Start Info Box */
+.contents .content .boxs .general-info-box .informations .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 0;
+}
+.contents .content .boxs .general-info-box .informations .info span {
+  color: var(--dimmed-color);
+  font-size: 13px;
+}
+.contents .content .boxs .general-info-box .informations .info input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--dimmed-color);
+  font-size: 13px;
+  outline: none;
+}
+.contents
+  .content
+  .boxs
+  .general-info-box
+  .informations
+  .info
+  input::placeholder {
+  color: #727f8a;
+}
+.contents
+  .content
+  .boxs
+  .general-info-box
+  .informations
+  .info:not(:last-child)
+  input {
+  background-color: #3b3b3b;
+}
+.contents .content .boxs .general-info-box .informations .email {
+  display: flex;
+  gap: 20px;
+}
+.contents .content .boxs .general-info-box .informations .email-container {
+  flex: 1;
+}
+.contents .content .boxs .general-info-box .informations .email input {
+  background-color: #212427;
+  pointer-events: none;
+  width: 100%;
+}
+.contents
+  .content
+  .boxs
+  .general-info-box
+  .informations
+  .email-container:hover {
+  cursor: no-drop;
+}
+.contents .content .boxs .general-info-box .informations .email button {
+  border: none;
+  background: none;
+  color: #0075ff;
+  cursor: pointer;
+}
+/* End Info Box */
+/* Start Security Box */
+.contents .content .boxs .security-box > div:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .security-box > div:not(:first-child) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.contents
+  .content
+  .boxs
+  .security-box
+  > div:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid var(--dimmed-color);
+}
+.contents .content .boxs .security-box > div .link-button {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contents .content .boxs .security-box > div:last-child .link-button {
+  background-color: var(--hover-color);
+}
+/* End Security Box */
+/* Start Social-Info Box */
+.contents .content .boxs .social-info-box .social-accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contents .content .boxs .social-info-box .social-accounts div {
+  display: flex;
+  align-items: center;
+  background-color: #222222;
+  border-radius: 6px;
+  border: 1px solid var(--hover-color);
+}
+.contents .content .boxs .social-info-box .social-accounts div input {
+  order: 1;
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+  border-left: 1px solid var(--secondary-color);
+  color: var(--font-color);
+}
+.contents .content .boxs .social-info-box .social-accounts div input:focus + i {
+  color: white;
+}
+.contents .content .boxs .social-info-box .social-accounts div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #878584;
+  width: 40px;
+  transition: var(--transition-time);
+}
+/* End Social-Info Box */
+/* Start Widgets Box */
+.contents .content .boxs .widgets-box .widget {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.contents .content .boxs .widgets-box .widget .checkbox {
+  border: 1px solid #0075ff;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.contents .content .boxs .widgets-box .widget input {
+  display: none;
+}
+.contents .content .boxs .widgets-box .widget input:checked + label::before {
+  transform: scale(1) rotate(-360deg);
+}
+.contents .content .boxs .widgets-box .widget label {
+  cursor: pointer;
+}
+.contents .content .boxs .widgets-box .widget label:first-child {
+  position: relative;
+}
+.contents .content .boxs .widgets-box .widget label:first-of-type::before {
+  content: "\f00c";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0075ff;
+  transform: scale(0) rotate(0);
+  transition: var(--transition-time);
+}
+/* End Widgets Box */
+/* Start Back-up Box */
+.contents .content .boxs .back-up-box .schedual {
+  border-bottom: 1px solid var(--dimmed-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+.contents .content .boxs .back-up-box .schedual .time {
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.contents .content .boxs .back-up-box .schedual .time input {
+  display: none;
+}
+.contents .content .boxs .back-up-box .schedual .time input:checked + label {
+  border: 2px solid #0075ff;
+}
+.contents
+  .content
+  .boxs
+  .back-up-box
+  .schedual
+  .time
+  input:checked
+  + label::before {
+  transform: scale(1);
+}
+.contents .content .boxs .back-up-box .schedual .time label {
+  cursor: pointer;
+}
+.contents .content .boxs .back-up-box .schedual .time label:first-of-type {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--dimmed-color);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-time);
+}
+.contents
+  .content
+  .boxs
+  .back-up-box
+  .schedual
+  .time
+  label:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #428bff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: var(--transition-time);
+}
+
+.contents .content .boxs .back-up-box .descriptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .back-up-box .descriptions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.contents .content .boxs .back-up-box .descriptions input {
+  display: none;
+}
+.contents .content .boxs .back-up-box .descriptions input:checked + label {
+  color: #428bff;
+  border-color: #428bff;
+}
+.contents .content .boxs .back-up-box .description {
+  color: var(--font-color);
+  border: 2px solid var(--dimmed-color);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  flex-basis: 32%;
+  line-height: 1.7;
+  transition: var(--transition-time);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .back-up-box .description {
+    width: 100%;
+  }
+}
+/* End Back-up Box */

@@ -1,0 +1,171 @@
+/* Start Filtering Active Link */
+.nav .links li:nth-child(7) a {
+  background-color: var(--hover-color);
+}
+/* End Filtering Active Link */
+/* Start Styling Files */
+.contents .content .files {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .contents .content .files {
+    flex-direction: column-reverse;
+    padding-top: 10px;
+  }
+}
+
+.contents .content .boxs {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  flex-basis: 78%;
+  padding-top: 0;
+  width: 100%;
+}
+.contents .content .boxs .file {
+  position: relative;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .contents .content .boxs .file {
+    width: 100%;
+  }
+}
+.contents .content .boxs .file:hover > i {
+  animation: download 1s linear infinite;
+}
+.contents .content .boxs .file:hover > .details img {
+  transform: rotate(6deg);
+}
+
+.contents .content .boxs .file i {
+  position: absolute;
+  color: var(--dimmed-color);
+}
+
+.contents .content .boxs .file .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+.contents .content .boxs .file .details img {
+  transition: var(--transition-time);
+  width: 60px;
+}
+.contents .content .boxs .file .details p {
+  color: var(--font-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contents .content .boxs .file .description {
+  color: var(--dimmed-color);
+  font-size: 12px;
+}
+.contents .content .boxs .file .description > p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--dimmed-color);
+}
+.contents .content .boxs .file .description .date-size {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contents .content .files .statistics {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex-basis: 22%;
+  min-width: 250px;
+}
+@media (max-width: 767px) {
+  .contents .content .files .statistics {
+    width: 97%;
+    margin: 0 auto;
+  }
+}
+.contents .content .files .statistics .categories {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contents .content .files .statistics .categories .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--dimmed-color);
+  padding: 10px;
+  border-radius: 6px;
+}
+.contents .content .files .statistics .categories .category .details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.contents .content .files .statistics .category .details i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents .content .files .statistics .category:nth-child(1) .details i {
+  background-color: #13263e;
+  color: #1877f2;
+}
+.contents .content .files .statistics .category:nth-child(2) .details i {
+  background-color: #153521;
+  color: #007211;
+}
+.contents .content .files .statistics .category:nth-child(3) .details i {
+  background-color: #410e0e;
+  color: #ff0000;
+}
+.contents .content .files .statistics .category:nth-child(4) .details i {
+  background-color: #3f2e10;
+  color: #a5740d;
+}
+.contents .content .files .statistics .categories .details .text {
+  line-height: 1.5;
+}
+.contents .content .files .statistics .categories .category .size,
+.contents .content .files .statistics .categories .details .text p:last-child {
+  font-size: 12px;
+  color: var(--dimmed-color);
+}
+
+.contents .content .files .statistics .link-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+.contents .content .files .statistics .link-button:hover > i {
+  animation: upload 0.5s linear infinite;
+}
+/* End Styling Files */
+/* Start Animation */
+@keyframes download {
+  10%, 20%, 40%, 50%, 70%, 80%, 90%, 100% {
+    transform: translateY(0);
+  }
+  30%, 60% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes upload {
+  50% {
+    transform: translateY(-5px);
+  }
+}
