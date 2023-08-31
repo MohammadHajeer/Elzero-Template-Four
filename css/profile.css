@@ -86,6 +86,8 @@
 }
 .contents .content .boxs .profile-box img {
   width: 120px;
+  height: 120px;
+  object-fit: cover;
   border: 5px solid var(--hover-color);
   border-radius: 50%;
 }

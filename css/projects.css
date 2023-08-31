@@ -33,22 +33,28 @@
   padding-bottom: 20px;
   border-bottom: 1px solid var(--dimmed-color);
 }
-.contents .content .boxs .project .team img {
-  width: 50px;
+.contents .content .boxs .project .team .user i {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  border: 5px solid var(--hover-color);
+  border: 3px solid var(--dimmed-color);
   position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
-.contents .content .boxs .project .team img:nth-child(2) {
+.contents .content .boxs .project .team .user:nth-child(2) i {
   left: -20px;
 }
-.contents .content .boxs .project .team img:nth-child(3) {
+.contents .content .boxs .project .team .user:nth-child(3) i {
   left: -40px;
 }
-.contents .content .boxs .project .team img:nth-child(4) {
+.contents .content .boxs .project .team .user:nth-child(4) i {
   left: -60px;
 }
-.contents .content .boxs .project .team img:nth-child(5) {
+.contents .content .boxs .project .team .user:nth-child(5) i {
   left: -80px;
 }
 

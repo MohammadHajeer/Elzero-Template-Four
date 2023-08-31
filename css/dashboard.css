@@ -36,59 +36,47 @@
   background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .contents .content .boxs .welcome-box .salute {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
 .contents .content .boxs .welcome-box .salute .title {
   color: var(--font-color);
-  line-height: 1.7;
+  line-height: 1.4;
+}
+.contents .content .boxs .welcome-box .salute .title h2 {
+  font-size: 30px;
 }
 .contents .content .boxs .welcome-box .salute .title p {
   color: var(--dimmed-color);
 }
 
 .contents .content .boxs .welcome-box .salute .profile-pic {
-  position: absolute;
+  /* position: absolute; */
   bottom: calc(-50% + 12px);
-  transform: translateY(-50%);
+  transform: translateY(0%);
   transition: var(--transition-time);
+  background-color: black;
+  border-radius: 50%;
+
 }
 
-@media (max-width: 767px) {
-  .contents .content .boxs .welcome-box .salute .profile-pic {
-    bottom: -50%;
-  }
-}
-
-@media (max-width: 450px) {
-  .contents .content .boxs .welcome-box .salute .profile-pic {
-    animation: moving-avatar 1s linear forwards;
-  }
-}
 
 .contents .content .boxs .welcome-box .salute .profile-pic img {
-  width: 50px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   border: 2px solid black;
   box-shadow: 0 0 5px #f4f4f4;
   border-radius: 50%;
-}
-
-.contents .content .boxs .welcome-box .salute > img {
-  width: 200px;
-  transition: var(--transition-time);
-}
-
-@media (max-width: 767px) {
-  .contents .content .boxs .welcome-box .salute > img {
-    width: 150px;
-  }
-}
-
-@media (max-width: 450px) {
-  .contents .content .boxs .welcome-box .salute > img {
-    width: 100px;
-  }
 }
 
 .contents .content .boxs .welcome-box .details {
@@ -887,23 +875,29 @@ textarea {
   border-top: none;
 }
 
-.projects-box table tbody td img {
-  width: 30px;
+.projects-box table tbody td .team .user i {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  border: 3px solid var(--hover-color);
+  border: 3px solid var(--dimmed-color);
   position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 .projects-box table tbody .team {
   display: flex;
   width: 40px;
 }
-.projects-box table tbody td img:nth-child(2) {
+.projects-box table tbody td .team .user:nth-child(2) i {
   left: -20px;
 }
-.projects-box table tbody td img:nth-child(3) {
+.projects-box table tbody td .team .user:nth-child(3) i {
   left: -40px;
 }
-.projects-box table tbody td img:nth-child(4) {
+.projects-box table tbody td .team .user:nth-child(4) i {
   left: -60px;
 }
 
